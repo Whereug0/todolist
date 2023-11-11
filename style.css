@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.container {
+    background: linear-gradient(315deg, rgb(30, 32, 31) 38%, rgb(93, 97, 97));
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.todo_list {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 40px;
+    border-radius: 10px;
+}
+
+.todo_list h2 {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.addButton {
+    border: none;
+    outline:none;
+    background: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 10px 20px;
+}
+
+.del {
+    border: none;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    background: url(/todolist/icons/trash-1-svgrepo-com.svg) center center / contain no-repeat;
+}
+
+
+ul li {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 100px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+
+
+form {
+    display: flex;
+    background: #edeef0;
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.custom-checkbox {
+    display: block;
+    position: absolute;
+    right: 71px;
+    width: 20px;
+    height: 20px;
+}
+
+ul li span {
+    display: block;
+    position: absolute;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.All-delete {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.del-All-btn {
+    color: white;
+    background: black;
+    /* font-family: 'Work Sans', sans-serif; */
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 700;
+}
