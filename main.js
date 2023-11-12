@@ -8,7 +8,9 @@ const allDelete = document.querySelector('.del-All-btn')
         alert("Напиши чё-нить")
     }
     else {
-
+        const now = new Date()
+        const time = document.createElement('div')
+        time.append(now.toLocaleString())
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'custom-checkbox';
@@ -24,13 +26,21 @@ const allDelete = document.querySelector('.del-All-btn')
         ul.append(newLi);
         deleteBtn.addEventListener('click', function(e){
             newLi.remove()
+            
         })
+        newLi.appendChild(time)
     }
     input.value = '';
+    // save()
     })
+
+
+
     function deleteItem (e) {
         console.log(e.currentTarget)
     }
+
+
 
     allDelete.addEventListener('click', (e) => {
         
@@ -43,4 +53,11 @@ const allDelete = document.querySelector('.del-All-btn')
         }
     } )
 
+    // function save() {
+    //     localStorage.setItem('data', ul.innerHTML);
+    // }
 
+    // function show() {
+    //     ul.innerHTML = localStorage.getItem('data');
+    // }
+    // show()

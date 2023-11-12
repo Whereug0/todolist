@@ -60,7 +60,7 @@ input {
     right: 40px;
     width: 20px;
     height: 20px;
-    background: url(/todolist/icons/trash-1-svgrepo-com.svg) center center / contain no-repeat;
+    background: url(/icons/trash-1-svgrepo-com.svg) center center / contain no-repeat;
 }
 
 
@@ -119,3 +119,5 @@ ul li span {
     cursor: pointer;
     font-weight: 700;
 }
+
+
